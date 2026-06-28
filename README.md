@@ -1,252 +1,320 @@
-# Portfolio Website - Bipin Neupane
-
-A modern, interactive portfolio website showcasing DevOps expertise with smooth animations, interactive skill demonstrations, and a professional timeline of experience.
-
-## 🎨 Features
-
-- **Modern Design**: Dark theme with gradient accents and glassmorphic elements
-- **Interactive Elements**: 
-  - Animated skill cards with hover effects
-  - Smooth transitions and parallax effects
-  - Interactive terminal window
-  - Progress bars for proficiency levels
-  - Animated timeline for experience
-  
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-
-- **Performance Optimized**: Fast load times and smooth animations
-
-- **Accessibility**: Keyboard navigation and proper semantic HTML
-
-## 📁 File Structure
-
-```
-├── index.html       # Main HTML file with all sections
-├── styles.css       # Complete CSS with animations and responsive design
-├── script.js        # Interactive JavaScript functionality
-└── README.md        # This file
-```
-
-## 🚀 Deployment to GitHub Pages
-
-### Step 1: Create a GitHub Repository
-
-1. Go to [GitHub](https://github.com) and create a new repository
-2. Name it `bipinneupane` (or your desired username)
-3. Do NOT initialize with README, .gitignore, or license
-
-### Step 2: Upload Files to Repository
-
-**Using Git (Recommended):**
-
-```bash
-# Navigate to your project directory
-cd /path/to/portfolio
-
-# Initialize git (if not already done)
-git init
-
-# Add all files
-git add .
-
-# Commit changes
-git commit -m "Initial portfolio website commit"
-
-# Add remote origin (replace with your repo URL)
-git remote add origin https://github.com/yourusername/bipinneupane.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
-
-### Step 3: Enable GitHub Pages
-
-1. Go to your repository on GitHub
-2. Navigate to **Settings** → **Pages**
-3. Under "Source", select:
-   - Branch: `main`
-   - Folder: `/ (root)`
-4. Click "Save"
-5. Your site will be published at: `https://yourusername.github.io/bipinneupane/`
-
-### Step 4: Custom Domain (Optional)
-
-If you want to use your custom domain `bipinneupane.com.np`:
-
-1. In repository **Settings** → **Pages**
-2. Under "Custom domain", enter: `bipinneupane.com.np`
-3. Update your domain DNS settings to point to GitHub Pages:
-   - Add A records pointing to GitHub's IP addresses, OR
-   - Add CNAME record pointing to `yourusername.github.io`
-4. Wait for DNS propagation (can take up to 48 hours)
-
-## 🎯 Sections
-
-### 1. **Hero Section**
-- Interactive terminal window with typing effect
-- Call-to-action buttons
-- Animated background elements
-
-### 2. **About Section**
-- Professional summary
-- Key statistics (servers managed, years of experience, technologies)
-- Contact information card
-
-### 3. **Skills Section**
-- 8 skill categories with 15+ technologies
-- Hover interactive skill cards with emojis
-- Proficiency level bar chart showing expertise percentages
-
-### 4. **Experience Section**
-- Timeline view of 3 positions
-- Detailed achievements for each role
-- Animated timeline dots
-
-### 5. **Achievements Section**
-- 6 key achievement cards
-- Security, infrastructure, automation highlights
-- Hover effects and animations
-
-### 6. **Contact Section**
-- 4 ways to connect (Email, Phone, LinkedIn, GitHub)
-- Interactive contact cards
-- Direct links for quick contact
-
-## 🔧 Customization
-
-### Update Contact Information
-
-Edit `index.html` and update:
-
-```html
-<!-- Email -->
-<a href="mailto:youremail@gmail.com">
-
-<!-- Phone -->
-<a href="tel:+977-9867297187">
-
-<!-- Social Links -->
-<a href="https://linkedin.com/in/yourprofile" target="_blank">
-<a href="https://github.com/yourusername" target="_blank">
-```
-
-### Modify Colors
-
-Edit `styles.css` variables at the top:
-
-```css
-:root {
-    --primary-color: #00d4ff;      /* Cyan accent */
-    --secondary-color: #6366f1;    /* Indigo */
-    --tertiary-color: #8b5cf6;     /* Purple */
-    --dark-bg: #0f172a;            /* Dark background */
-    --text-primary: #f1f5f9;       /* Light text */
-}
-```
-
-### Add More Skills
-
-In the Skills section, add new skill categories:
-
-```html
-<div class="skill-category">
-    <h3>Your Category</h3>
-    <div class="skill-items">
-        <div class="skill-item" data-skill="Tool Name">
-            <div class="skill-icon">🔧</div>
-            <span>Tool Name</span>
-        </div>
-    </div>
-</div>
-```
-
-### Update Experience
-
-Modify the timeline items in the Experience section:
-
-```html
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-        <div class="exp-header">
-            <h3>Your Position</h3>
-            <span class="exp-date">Start – End</span>
-        </div>
-        <p class="company">Company Name</p>
-        <ul class="exp-highlights">
-            <li>Achievement 1</li>
-            <li>Achievement 2</li>
-        </ul>
-    </div>
-</div>
-```
-
-## 🎬 Browser Support
-
-- Chrome/Edge (Latest)
-- Firefox (Latest)
-- Safari (Latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## ⚡ Performance Tips
-
-1. **Images**: Keep hero visual lightweight
-2. **Animations**: Disabled on reduced motion preferences
-3. **Fonts**: Uses Google Fonts (Poppins, Space Mono)
-3. **CSS**: Minify in production for better performance
-
-## 📱 Mobile Optimization
-
-The site is fully responsive with breakpoints at:
-- 768px (tablets)
-- 480px (mobile)
-
-All interactive elements are touch-friendly with appropriate spacing.
-
-## 🔐 Security Notes
-
-- No sensitive information should be stored in code
-- All external links use `target="_blank"` with security considerations
-- Form submissions should be handled through secure services
-
-## 📊 SEO Optimization
-
-Update these meta tags in `index.html`:
-
-```html
-<meta name="description" content="Bipin Neupane - DevOps Engineer">
-<meta name="keywords" content="DevOps, Docker, Kubernetes, AWS, Infrastructure">
-<meta property="og:title" content="Bipin Neupane - DevOps Engineer">
-<meta property="og:description" content="Professional portfolio showcasing DevOps expertise">
-```
-
-## 📝 License
-
-This portfolio template is free to use and modify for personal or professional use.
-
-## 💡 Tips for Best Results
-
-1. **Keep it Updated**: Update experience and skills regularly
-2. **Add Project Links**: Consider adding links to GitHub projects or case studies
-3. **Professional Photo**: Consider adding a professional headshot in the about section
-4. **Regular Backups**: Backup your repository regularly
-5. **Testing**: Test on multiple devices and browsers before deployment
-
-## 🚀 Next Steps
-
-1. Replace contact information with your own
-2. Update social media links
-3. Add your GitHub/LinkedIn profiles
-4. Deploy to GitHub Pages
-5. Set up custom domain
-6. Share with recruiters and network!
-
-## 📧 Support
-
-For issues or questions about this template, feel free to reach out through the contact section.
+# 🖥️ DevOps Portfolio Template — Cyber Terminal Aesthetic
+
+> A free, open-source DevOps portfolio website template for Cloud Engineers, SREs, and DevOps professionals.  
+> Built with **React + TypeScript**, featuring a cyber terminal design, interactive blog, case studies, and CI/CD-ready deployment on Vercel.
+
+<p align="center">
+  <a href="https://github.com/neerajnakka/devops-portfolio/stargazers">
+    <img src="https://img.shields.io/github/stars/neerajnakka/devops-portfolio?style=for-the-badge&color=00ff41&labelColor=0a0a0a" alt="GitHub Stars" />
+  </a>
+  <a href="https://github.com/neerajnakka/devops-portfolio/network/members">
+    <img src="https://img.shields.io/github/forks/neerajnakka/devops-portfolio?style=for-the-badge&color=00ff41&labelColor=0a0a0a" alt="GitHub Forks" />
+  </a>
+  <a href="https://github.com/neerajnakka/devops-portfolio/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-00ff41?style=for-the-badge&labelColor=0a0a0a" alt="MIT License" />
+  </a>
+  <a href="https://neeraj-devops.vercel.app">
+    <img src="https://img.shields.io/badge/Live%20Demo-Vercel-00ff41?style=for-the-badge&labelColor=0a0a0a&logo=vercel" alt="Live Demo" />
+  </a>
+</p>
+
+<p align="center">
+  <b><a href="https://neeraj-devops.vercel.app">🔴 Live Demo</a></b> •
+  <b><a href="#-quick-start">Quick Start</a></b> •
+  <b><a href="#-customization-guide">Customization</a></b> •
+  <b><a href="#-deployment">Deploy</a></b>
+</p>
 
 ---
 
-**Last Updated**: June 2024
-**Built with**: HTML5, CSS3, JavaScript (Vanilla)
+## 🤔 Who Is This For?
+
+If you are a **DevOps engineer, Cloud Engineer, or SRE** who:
+
+- Wants a portfolio that looks like it belongs in a terminal — not a marketing agency
+- Is targeting product-based companies, startups, or FAANG-adjacent roles
+- Wants to stand out from generic Notion or Google Sites portfolios
+- Needs a ready-to-deploy solution in under 10 minutes
+
+**This template is for you.**
+
+Recruiters spend an average of 6 seconds on a resume. A portfolio like this helps them quickly understand your technical depth and project experience — before they even read a word.
+
+---
+
+## 🖥️ Preview
+
+> Live at → **[neeraj-devops.vercel.app](https://neeraj-devops.vercel.app)**
+
+| Section | What You Get |
+|---|---|
+| 🏠 Home | Animated terminal hero, typewriter effect, neon aesthetic |
+| 🛠️ Skills | Visual proficiency indicators for full DevOps toolchain |
+| 📁 Projects | Filterable project cards with tech stack tags |
+| 📊 Case Studies | Challenge → Solution → Impact breakdowns with metrics |
+| 📝 Blog | Modal-based reading, view counts, category filters |
+| 📬 Contact | Web3Forms-powered contact form, no backend required |
+
+---
+
+## 🚀 Quick Start
+
+**Fork → Customize → Deploy in under 10 minutes.**
+
+```bash
+# Step 1 — Clone your fork
+git clone https://github.com/YOUR_USERNAME/devops-portfolio.git
+cd devops-portfolio
+
+# Step 2 — Install dependencies
+npm install
+
+# Step 3 — Set up environment (required for contact form)
+cp .env.example .env
+# Open .env and add your Web3Forms key (free at web3forms.com)
+
+# Step 4 — Run locally
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) — you should see the full site.
+
+<a href="https://vercel.com/new/clone?repository-url=https://github.com/neerajnakka/devops-portfolio">
+  <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+</a>
+
+---
+
+## ✨ Features
+
+### 🎯 Portfolio Core
+- **Cyber Terminal Design** — Electric neon green theme, monospace fonts, authentic command-line aesthetic
+- **3D Animated Background** — Dynamic grid powered by Three.js
+- **Typewriter & Glitch Effects** — Smooth transitions powered by Framer Motion
+- **Fully Responsive** — Optimized for desktop, tablet, and mobile
+- **Interactive Skill Explorer** — Visual proficiency indicators for DevOps toolchain
+- **Project Filtering** — Filter projects by technology stack
+
+### 📝 Interactive Tech Blog (`/blog`)
+- Full article modal reading experience
+- Real-time view count tracking
+- Category filtering (DevOps, Cloud Infrastructure, Full-Stack)
+- Search, sort by date / views / likes
+- Featured article highlights
+
+### 📊 Case Studies (`/case-studies`)
+- Detailed challenge → solution → impact breakdowns
+- Realistic performance metrics
+- Before/after comparisons
+- Full technology stack context per project
+
+### 🛠️ DevOps-Ready Deployment
+- Vercel auto-deployment on push to `main`
+- SPA redirect rules pre-configured (`vercel.json`)
+- Environment variable support for secrets
+- Netlify-compatible with one config file
+
+---
+
+## 🧰 Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | React 18 + TypeScript |
+| Build Tool | Vite |
+| Styling | Tailwind CSS |
+| Animations | Framer Motion |
+| Routing | React Router |
+| 3D Effects | Three.js |
+| Icons | Lucide React |
+| Contact Form | Web3Forms (free, no backend) |
+| Deployment | Vercel |
+
+---
+
+## ⚠️ Environment Setup (Required for Contact Form)
+
+The contact form uses **[Web3Forms](https://web3forms.com)** — a free service that delivers form submissions to your email. You must replace the API key with your own before deploying.
+
+### Step 1 — Get your free Web3Forms key (30 seconds)
+Go to [web3forms.com](https://web3forms.com) → enter your email → copy your access key.
+
+### Step 2 — Set up your local `.env` file
+```bash
+cp .env.example .env
+```
+
+Edit `.env`:
+```env
+VITE_WEB3FORMS_KEY=your_access_key_here
+```
+
+### Step 3 — Add to Vercel (for production)
+In your Vercel project → **Settings** → **Environment Variables**:
+
+| Key | Value | Environments |
+|---|---|---|
+| `VITE_WEB3FORMS_KEY` | `your_access_key_here` | Production, Preview, Development |
+
+After adding, **redeploy** the project (push a commit or use Vercel dashboard → Redeploy).
+
+> **Never commit your `.env` file.** It is already in `.gitignore`.
+
+---
+
+## 🎨 Customization Guide
+
+### Your Personal Information
+
+| What to change | File |
+|---|---|
+| Name, role, bio | `src/data/portfolio.ts` or `src/pages/Home.tsx` |
+| Navigation links | `src/components/Navbar.tsx` |
+| Footer links + socials | `src/components/Footer.tsx` |
+| Skills & proficiency | `src/pages/Skills.tsx` |
+| Contact details | `src/data/portfolio.ts` |
+
+### Your Projects & Case Studies
+
+Edit the `caseStudies` array in:
+```
+src/components/case-studies/EnhancedCaseStudies.tsx
+```
+
+Each entry supports: title, problem statement, solution, tech stack, and before/after metrics.
+
+### Your Blog Posts
+
+Edit the `blogPosts` array in:
+```
+src/components/blog/EnhancedBlog.tsx
+```
+
+### Colors & Branding
+
+```js
+// tailwind.config.js — change the neon green to your preferred accent
+colors: {
+  primary: {
+    500: '#00ff41',   // ← your primary accent color
+  },
+  'bg-page':    '#0a0a0a',   // ← main background
+  'bg-surface': '#111111',   // ← card background
+}
+```
+
+### Fonts & Animations
+- Typography: `src/index.css`
+- Animation config: `src/components/visual/VisualComponents.tsx`
+
+---
+
+## 📁 Project Structure
+
+```
+devops-portfolio/
+├── src/
+│   ├── components/
+│   │   ├── blog/
+│   │   │   └── EnhancedBlog.tsx          # Blog with modal reading + metrics
+│   │   ├── case-studies/
+│   │   │   └── EnhancedCaseStudies.tsx   # Case studies with impact data
+│   │   ├── visual/
+│   │   │   └── VisualComponents.tsx      # Reusable animated UI components
+│   │   ├── Navbar.tsx
+│   │   └── Footer.tsx
+│   ├── data/
+│   │   └── portfolio.ts                  # ← your name, links, contact info
+│   ├── pages/                            # Route-level page components
+│   ├── App.tsx
+│   └── main.tsx
+├── public/
+├── .env.example                          # ← copy this to .env
+├── .gitignore
+├── vercel.json                           # SPA redirect rules
+├── tailwind.config.js
+└── vite.config.ts
+```
+
+---
+
+## 🚀 Deployment
+
+### Vercel (Recommended — Free)
+
+1. Fork this repo
+2. Go to [vercel.com](https://vercel.com) → Import your fork
+3. Add `VITE_WEB3FORMS_KEY` in **Settings → Environment Variables**
+4. Deploy — live in under 2 minutes
+
+### Netlify
+
+```bash
+npm run build
+# Upload the `dist/` folder to Netlify Drop
+```
+
+Create a `netlify.toml` file in the project root:
+```toml
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+---
+
+## 🔧 Development Scripts
+
+```bash
+npm run dev          # Start development server (localhost:5173)
+npm run build        # Production build → dist/
+npm run preview      # Preview production build locally
+npm run lint         # Run ESLint
+npm run type-check   # TypeScript type checking
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Commit changes: `git commit -m 'Add your feature'`
+4. Push to branch: `git push origin feature/your-feature`
+5. Open a Pull Request
+
+---
+
+## 📱 Browser Support
+
+Chrome, Firefox, Safari, Edge (latest versions) · iOS Safari · Chrome Mobile
+
+---
+
+## 📄 License
+
+MIT — free to use, fork, and deploy for personal and commercial use.
+
+---
+
+## 👨‍💻 About This Project
+
+Originally built by **Neeraj Chandra Nakka** as a DevOps portfolio template for cloud, SRE, and infrastructure engineers.
+
+This portfolio is designed for DevOps engineers who want something that looks like it belongs in a terminal — not a Wix page. If you're targeting product-based companies, a portfolio like this helps recruiters quickly understand your technical depth and project experience.
+
+## 🔗 Links
+
+- **Live Site**: [neeraj-devops.vercel.app](https://neeraj-devops.vercel.app)
+- **GitHub**: [github.com/neerajnakka](https://github.com/neerajnakka)
+- **LinkedIn**: [linkedin.com/in/neerajchandran](https://linkedin.com/in/neerajchandran)
+
+---
+
+<p align="center">
+  <b>If this template helped you land a job or get noticed, drop a ⭐ — it helps other DevOps engineers find it.</b><br/>
+  <i>One click. It means a lot.</i>
+</p>
